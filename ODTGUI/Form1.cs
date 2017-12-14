@@ -8,24 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace ODTGUI
 {
     public partial class mainForm : Form
     {
+        private string configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItemLink;
+        private string overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItemLink;
         public mainForm()
         {
+            configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItemLink = ConfigurationSettings.AppSettings["link1"];
+            overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItemLink = ConfigurationSettings.AppSettings["link2"];
             InitializeComponent();
         }
 
         private void configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://support.office.com/en-us/article/Configuration-options-for-the-Office-2016-Deployment-Tool-d3879f0d-766c-469c-9440-0a9a2a905ca8?ui=en-US&rs=en-US&ad=US");
+            
+            Process.Start(configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItemLink);
         }
 
         private void overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://support.office.com/en-us/article/Overview-of-shared-computer-activation-for-Office-365-ProPlus-836f882c-8ff6-4f19-8b24-0212e0111c94");
+            Process.Start(overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItemLink);
         }
     }
 }
