@@ -24,10 +24,19 @@ namespace ODTGUI.Models
         public string SourcePath { get; set; }
 
         [XmlAttribute]
+        public string Version { get; set; }
+
+        [XmlAttribute]
         public int OfficeClientEdition { get; set; }
 
         [XmlAttribute]
         public string Channel { get; set; }
+
+        [XmlAttribute]
+        public string DownloadPath { get; set; }
+
+        [XmlAttribute]
+        public bool ForceUpgrade { get; set; }
 
         [XmlElement]
         public List<Product> Products { get; set; }
@@ -40,6 +49,9 @@ namespace ODTGUI.Models
 
         [XmlElement]
         public List<Language> Languages { get; set; }
+
+        [XmlElement]
+        public List<ExcludeApp> ExcludeApps { get; set; }
     }
     [Serializable]
     public class Language
@@ -51,10 +63,19 @@ namespace ODTGUI.Models
     public class Updates
     {
         [XmlAttribute]
-        public string Enabled { get; set; }
+        public bool Enabled { get; set; }
 
         [XmlAttribute]
         public string UpdatePath { get; set; }
+
+        [XmlAttribute]
+        public string TargetVersion { get; set; }
+
+        [XmlAttribute]
+        public string Deadline { get; set; }
+
+        [XmlAttribute]
+        public string Channel { get; set; }
     }
 
     [Serializable]
@@ -76,5 +97,32 @@ namespace ODTGUI.Models
         [XmlAttribute]
         public string Path { get; set; }
     }
+
+    [Serializable]
+    public class ExcludeApp
+    {
+        [XmlAttribute("ID")]
+        public string Id { get; set; }
+    }
+    [Serializable]
+    public class Property
+    {
+        [XmlAttribute]
+        public string Name { get; set; }
+
+        [XmlAttribute]
+        public string Value { get; set; }
+    }
+
+    [Serializable]
+    public class Remove
+    {
+        [XmlAttribute]
+        public bool All { get; set; }
+
+        [XmlElement]
+        List<Product> Products { get; set; }
+    }
+
 
 }
