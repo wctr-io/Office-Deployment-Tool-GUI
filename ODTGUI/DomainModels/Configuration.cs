@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace ODTGUI.Models
+namespace ODTGUI.DomainModels
 {
     [Serializable]
     [XmlRoot]

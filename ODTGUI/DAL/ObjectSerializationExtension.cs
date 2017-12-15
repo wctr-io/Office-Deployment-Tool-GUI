@@ -1,4 +1,5 @@
-﻿using ODTGUI.Utils;
+﻿using ODTGUI.ApplicationModels.Enums;
+using ODTGUI.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,10 +11,10 @@ using System.Xml.Serialization;
 
 namespace ODTGUI.DAL
 {
-    public class ObjectSerializationExtenssion
+    public class ObjectSerializationExtension
     {
         ILogger _logger;
-        public ObjectSerializationExtenssion(ILogger logger)
+        public ObjectSerializationExtension(ILogger logger)
         {
             _logger = logger;
         }
@@ -43,7 +44,7 @@ namespace ODTGUI.DAL
             catch (Exception ex)
             {
                 //Log exception here
-                _logger.Log(ex.ToString());
+                _logger.Log(ex.ToString(), LogLevel.Error);
             }
         }
 
@@ -83,7 +84,7 @@ namespace ODTGUI.DAL
             catch (Exception ex)
             {
                 //Log exception here
-                _logger.Log(ex.ToString());
+                _logger.Log(ex.ToString(), LogLevel.Error);
             }
 
             return objectOut;

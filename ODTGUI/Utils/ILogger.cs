@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ODTGUI.ApplicationModels.Enums;
 
 namespace ODTGUI.Utils
 {
     public interface ILogger
     {
-        void Log(string log);
+        void Log(string log, LogLevel level);
     }
 }
