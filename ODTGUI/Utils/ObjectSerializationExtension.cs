@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace ODTGUI.DAL
+namespace ODTGUI.Utils
 {
     public class ObjectSerializationExtension
     {

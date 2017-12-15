@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Xml.Serialization;
+using System.IO;
+using ODTGUI.DomainModels;
 
 namespace ODTGUI
 {
@@ -25,7 +22,40 @@ namespace ODTGUI
 
         private void configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            //XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+            //ns.Add("", "");
+            //var xmlSerializer = new XmlSerializer(typeof(Configuration));
+
+            //var testObject = new Configuration {
+            //    Add = new Add
+            //    {
+            //        SourcePath = @"\\Server\Share",
+            //        Channel = "Broad",
+            //        OfficeClientEdition = 32,
+            //        Products = new List<Product>() {
+            //            new Product { Id = "O365ProPlusRetail",
+            //                Languages = new List<Language>() {
+            //                    new Language {Id = "en-us" },
+            //                    new Language {Id = "ja-jp" }
+            //                }
+            //            },
+            //            new Product { Id = "VisioProRetail" ,
+            //                Languages = new List<Language>() {
+            //                    new Language {Id = "en-us" },
+            //                }
+            //            }
+            //        }
+            //    }
+            //};
+
+            //string xml;
+            //using (StringWriter textWriter = new StringWriter())
+            //{
+            //    xmlSerializer.Serialize(textWriter, testObject, ns);
+            //    xml =  textWriter.ToString();
+            //}
+
+
             Process.Start(configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItemLink);
         }
 
