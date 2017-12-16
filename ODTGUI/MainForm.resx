@@ -137,6 +137,19 @@ Optional. Default is 0.
           Value="1"/&gt;
 </value>
   </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>FORCEAPPSHUTDOWN property (part of Property element)
+
+When set to TRUE, forces any apps that are blocking the install of Office to shut down. Data loss may occur.
+
+Optional. Default is FALSE.
+
+&lt;Property Name="FORCEAPPSHUTDOWN"
+          Value="FALSE"/&gt;
+    &lt;Property Name="FORCEAPPSHUTDOWN"
+          Value="TRUE"/&gt;
+</value>
+  </data>
   <data name="label4.Text" xml:space="preserve">
     <value>PACKAGEGUID property (part of Property element)
 
@@ -155,19 +168,6 @@ The Package ID must follow the format of the example and can only use these char
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
 
 If you use any other characters, the App-V package is created with the default Package ID.
-</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>FORCEAPPSHUTDOWN property (part of Property element)
-
-When set to TRUE, forces any apps that are blocking the install of Office to shut down. Data loss may occur.
-
-Optional. Default is FALSE.
-
-&lt;Property Name="FORCEAPPSHUTDOWN"
-          Value="FALSE"/&gt;
-    &lt;Property Name="FORCEAPPSHUTDOWN"
-          Value="TRUE"/&gt;
 </value>
   </data>
   <data name="label6.Text" xml:space="preserve">

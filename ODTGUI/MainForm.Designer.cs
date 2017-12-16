@@ -1,6 +1,6 @@
 ﻿namespace ODTGUI
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,14 +52,14 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.packageguidPropertiesTabPage = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.forceappsshutdownPropertiesTabPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.packageguidPropertiesTabPage = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.sharedcomputerlicensingPropertiesTabPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -76,9 +76,6 @@
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrip.SuspendLayout();
             this.filesTabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -93,10 +90,10 @@
             this.propertiesTabControl.SuspendLayout();
             this.autoactivatePropertiesTabPage.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.packageguidPropertiesTabPage.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.forceappsshutdownPropertiesTabPage.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.packageguidPropertiesTabPage.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.sharedcomputerlicensingPropertiesTabPage.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.sclcacheoverridePropertiesTabPage.SuspendLayout();
@@ -110,8 +107,7 @@
             // mainMenuStrip
             // 
             this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.fileToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
             this.mainMenuStrip.Size = new System.Drawing.Size(584, 24);
@@ -129,7 +125,7 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New..";
             // 
             // mainStatusStrip
@@ -178,7 +174,7 @@
             this.loggingTabPage.Location = new System.Drawing.Point(4, 22);
             this.loggingTabPage.Name = "loggingTabPage";
             this.loggingTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.loggingTabPage.Size = new System.Drawing.Size(462, 357);
+            this.loggingTabPage.Size = new System.Drawing.Size(562, 457);
             this.loggingTabPage.TabIndex = 0;
             this.loggingTabPage.Text = "Logging";
             this.loggingTabPage.UseVisualStyleBackColor = true;
@@ -191,7 +187,7 @@
             this.loggingTabControl.Location = new System.Drawing.Point(3, 3);
             this.loggingTabControl.Name = "loggingTabControl";
             this.loggingTabControl.SelectedIndex = 0;
-            this.loggingTabControl.Size = new System.Drawing.Size(456, 351);
+            this.loggingTabControl.Size = new System.Drawing.Size(556, 451);
             this.loggingTabControl.TabIndex = 0;
             // 
             // loggingLevelTabPage
@@ -200,7 +196,7 @@
             this.loggingLevelTabPage.Location = new System.Drawing.Point(4, 22);
             this.loggingLevelTabPage.Name = "loggingLevelTabPage";
             this.loggingLevelTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.loggingLevelTabPage.Size = new System.Drawing.Size(348, 225);
+            this.loggingLevelTabPage.Size = new System.Drawing.Size(548, 425);
             this.loggingLevelTabPage.TabIndex = 0;
             this.loggingLevelTabPage.Text = "Level";
             this.loggingLevelTabPage.UseVisualStyleBackColor = true;
@@ -217,7 +213,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(342, 219);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(542, 419);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // loggingLevelCheckBox
@@ -228,7 +224,7 @@
             this.loggingLevelCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loggingLevelCheckBox.Location = new System.Drawing.Point(3, 3);
             this.loggingLevelCheckBox.Name = "loggingLevelCheckBox";
-            this.loggingLevelCheckBox.Size = new System.Drawing.Size(336, 17);
+            this.loggingLevelCheckBox.Size = new System.Drawing.Size(536, 17);
             this.loggingLevelCheckBox.TabIndex = 0;
             this.loggingLevelCheckBox.Text = "Standard";
             this.loggingLevelCheckBox.UseVisualStyleBackColor = true;
@@ -239,7 +235,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 196);
+            this.label1.Size = new System.Drawing.Size(536, 396);
             this.label1.TabIndex = 1;
             this.label1.Text = "Level attribute (part of Logging element)\r\n\r\nTurns logging on or off.\r\n\r\nOptional" +
     ". Default is Standard\r\n\r\nLevel=\"Off\" \r\nLevel=\"Standard\" ";
@@ -250,7 +246,7 @@
             this.loggingPathTabPage.Location = new System.Drawing.Point(4, 22);
             this.loggingPathTabPage.Name = "loggingPathTabPage";
             this.loggingPathTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.loggingPathTabPage.Size = new System.Drawing.Size(448, 325);
+            this.loggingPathTabPage.Size = new System.Drawing.Size(548, 425);
             this.loggingPathTabPage.TabIndex = 1;
             this.loggingPathTabPage.Text = "Path";
             this.loggingPathTabPage.UseVisualStyleBackColor = true;
@@ -267,7 +263,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(442, 319);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(542, 419);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label2
@@ -276,7 +272,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(436, 293);
+            this.label2.Size = new System.Drawing.Size(536, 393);
             this.label2.TabIndex = 1;
             this.label2.Text = "Path attribute (part of Logging element)\r\n\r\nDefines the location of the log files" +
     ".\r\n\r\nOptional. Default is %temp%.\r\n\r\nPath=\"%temp%\" \r\nPath=\"\\\\server\\share\\userlo" +
@@ -287,7 +283,7 @@
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(436, 20);
+            this.textBox1.Size = new System.Drawing.Size(536, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "%temp%";
             // 
@@ -366,50 +362,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = resources.GetString("label3.Text");
             // 
-            // packageguidPropertiesTabPage
-            // 
-            this.packageguidPropertiesTabPage.Controls.Add(this.tableLayoutPanel4);
-            this.packageguidPropertiesTabPage.Location = new System.Drawing.Point(4, 40);
-            this.packageguidPropertiesTabPage.Name = "packageguidPropertiesTabPage";
-            this.packageguidPropertiesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.packageguidPropertiesTabPage.Size = new System.Drawing.Size(548, 407);
-            this.packageguidPropertiesTabPage.TabIndex = 1;
-            this.packageguidPropertiesTabPage.Text = "Package GUID";
-            this.packageguidPropertiesTabPage.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox2, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(542, 401);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(536, 375);
-            this.label4.TabIndex = 1;
-            this.label4.Text = resources.GetString("label4.Text");
-            // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(536, 20);
-            this.textBox2.TabIndex = 2;
-            // 
             // forceappsshutdownPropertiesTabPage
             // 
             this.forceappsshutdownPropertiesTabPage.Controls.Add(this.tableLayoutPanel5);
@@ -457,13 +409,57 @@
             this.label5.TabIndex = 1;
             this.label5.Text = resources.GetString("label5.Text");
             // 
+            // packageguidPropertiesTabPage
+            // 
+            this.packageguidPropertiesTabPage.Controls.Add(this.tableLayoutPanel4);
+            this.packageguidPropertiesTabPage.Location = new System.Drawing.Point(4, 40);
+            this.packageguidPropertiesTabPage.Name = "packageguidPropertiesTabPage";
+            this.packageguidPropertiesTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.packageguidPropertiesTabPage.Size = new System.Drawing.Size(548, 407);
+            this.packageguidPropertiesTabPage.TabIndex = 1;
+            this.packageguidPropertiesTabPage.Text = "Package GUID";
+            this.packageguidPropertiesTabPage.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.textBox2, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(542, 401);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(3, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(536, 375);
+            this.label4.TabIndex = 1;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Location = new System.Drawing.Point(3, 3);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(536, 20);
+            this.textBox2.TabIndex = 2;
+            // 
             // sharedcomputerlicensingPropertiesTabPage
             // 
             this.sharedcomputerlicensingPropertiesTabPage.Controls.Add(this.tableLayoutPanel6);
             this.sharedcomputerlicensingPropertiesTabPage.Location = new System.Drawing.Point(4, 40);
             this.sharedcomputerlicensingPropertiesTabPage.Name = "sharedcomputerlicensingPropertiesTabPage";
             this.sharedcomputerlicensingPropertiesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.sharedcomputerlicensingPropertiesTabPage.Size = new System.Drawing.Size(448, 307);
+            this.sharedcomputerlicensingPropertiesTabPage.Size = new System.Drawing.Size(548, 407);
             this.sharedcomputerlicensingPropertiesTabPage.TabIndex = 3;
             this.sharedcomputerlicensingPropertiesTabPage.Text = "Shared Computer Licensing";
             this.sharedcomputerlicensingPropertiesTabPage.UseVisualStyleBackColor = true;
@@ -480,7 +476,7 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(442, 301);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(542, 401);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // checkBox3
@@ -489,7 +485,7 @@
             this.checkBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBox3.Location = new System.Drawing.Point(3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(436, 17);
+            this.checkBox3.Size = new System.Drawing.Size(536, 17);
             this.checkBox3.TabIndex = 0;
             this.checkBox3.Text = "0";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -500,7 +496,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 23);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(436, 278);
+            this.label6.Size = new System.Drawing.Size(536, 378);
             this.label6.TabIndex = 1;
             this.label6.Text = resources.GetString("label6.Text");
             // 
@@ -510,7 +506,7 @@
             this.sclcacheoverridePropertiesTabPage.Location = new System.Drawing.Point(4, 40);
             this.sclcacheoverridePropertiesTabPage.Name = "sclcacheoverridePropertiesTabPage";
             this.sclcacheoverridePropertiesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.sclcacheoverridePropertiesTabPage.Size = new System.Drawing.Size(448, 307);
+            this.sclcacheoverridePropertiesTabPage.Size = new System.Drawing.Size(548, 407);
             this.sclcacheoverridePropertiesTabPage.TabIndex = 4;
             this.sclcacheoverridePropertiesTabPage.Text = "SCL Cache Override";
             this.sclcacheoverridePropertiesTabPage.UseVisualStyleBackColor = true;
@@ -527,7 +523,7 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(442, 301);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(542, 401);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // checkBox4
@@ -536,7 +532,7 @@
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBox4.Location = new System.Drawing.Point(3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(436, 17);
+            this.checkBox4.Size = new System.Drawing.Size(536, 17);
             this.checkBox4.TabIndex = 0;
             this.checkBox4.Text = "0";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -547,7 +543,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(3, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(436, 278);
+            this.label7.Size = new System.Drawing.Size(536, 378);
             this.label7.TabIndex = 1;
             this.label7.Text = resources.GetString("label7.Text");
             // 
@@ -644,29 +640,6 @@
             this.label9.TabIndex = 1;
             this.label9.Text = resources.GetString("label9.Text");
             // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem,
-            this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem
-            // 
-            this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem.Name = "configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem";
-            this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem.Size = new System.Drawing.Size(402, 22);
-            this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem.Text = "Configuration options for the Office 2016 Deployment Tool";
-            this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem.Click += new System.EventHandler(this.configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem_Click);
-            // 
-            // overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem
-            // 
-            this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem.Name = "overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem";
-            this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem.Size = new System.Drawing.Size(402, 22);
-            this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem.Text = "Overview of shared computer activation for Office 365 ProPlus";
-            this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem.Click += new System.EventHandler(this.overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -698,12 +671,12 @@
             this.autoactivatePropertiesTabPage.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.packageguidPropertiesTabPage.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.forceappsshutdownPropertiesTabPage.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.packageguidPropertiesTabPage.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.sharedcomputerlicensingPropertiesTabPage.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
@@ -770,9 +743,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configurationOptionsForTheOffice2016DeploymentToolToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem overviewOfSharedComputerActivationForOffice365ProPlusToolStripMenuItem;
     }
 }
 
