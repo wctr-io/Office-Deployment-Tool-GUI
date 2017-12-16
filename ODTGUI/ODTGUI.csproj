@@ -87,13 +87,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="App_Data\help_links.xml">
+    <AdditionalFiles Include="App_Data\Help_links.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AdditionalFiles>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DataSources\Languages.xml" />
-    <Content Include="DataSources\Products.xml" />
+    <AdditionalFiles Include="App_Data\Languages.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="App_Data\Products.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
