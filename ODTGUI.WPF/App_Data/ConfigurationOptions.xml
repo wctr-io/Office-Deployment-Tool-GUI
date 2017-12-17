@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConfigurationOptions>
+  <Element>
+    <Name></Name>
+    <Reuse></Reuse>
+    <Required></Required>
+    <NiceName></NiceName>
+    <Definition></Definition>
+    <HelpInfo></HelpInfo>
+    <HelpUri></HelpUri>
+    <Example>
+      <![CDATA[]]>
+    </Example>
+    <Children>
+      <Element>
+
+      </Element>
+    </Children>
+    <Attributes>
+      <Attribute>
+        <Name></Name>
+        <Required></Required>
+        <Type></Type>
+        <Values>
+          <Value>
+            <Name></Name>
+            <NiceName></NiceName>
+            <HelpInfo></HelpInfo>
+            <IsDefault></IsDefault>
+          </Value>
+        </Values>
+        <NiceName></NiceName>
+        <Definition></Definition>
+        <HelpUri></HelpUri>
+        <Example></Example>
+      </Attribute>
+    </Attributes>
+  </Element>
+</ConfigurationOptions>
