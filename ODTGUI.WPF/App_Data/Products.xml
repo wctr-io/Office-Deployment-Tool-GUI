@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+  <Product>
+    <Id>O365ProPlusRetail</Id>
+    <Name>Office 365 ProPlus</Name>
+    <Group>Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan>Office 365 ProPlus</Plan>
+      <Plan>Office 365 Enterprise E3</Plan>
+      <Plan>Office 365 Enterprise E4</Plan>
+      <Plan>Office 365 Enterprise E5</Plan>
+      <Plan>Office 365 Midsize</Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>O365BusinessRetail</Id>
+    <Name>Office 365 Business</Name>
+    <Group>Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan>Office 365 Business</Plan>
+      <Plan>Office 365 Business Premium</Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>VisioProRetail</Id>
+    <Name>Visio Pro</Name>
+    <Group>Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan>Visio Pro</Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>ProjectProRetail</Id>
+    <Name>Project Pro</Name>
+    <Group>Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan>Project Pro</Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>AccessRuntimeRetail</Id>
+    <Name>Access Runtime</Name>
+    <Group>Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan>Access Runtime</Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>LanguagePack</Id>
+    <Name>Language Pack</Name>
+    <Group>Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan>Language Pack</Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>AccessRetail</Id>
+    <Name>Access</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>ExcelRetail</Id>
+    <Name>Excel</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>HomeBusinessRetail</Id>
+    <Name>Office Home &amp; Business</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>HomeStudentRetail</Id>
+    <Name>Office Home &amp; Student</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>ProfessionalRetail</Id>
+    <Name>Office Professional</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>O365HomePremRetail</Id>
+    <Name>Office 365 Home Premium</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>O365SmallBusPremRetail</Id>
+    <Name>Office 365 Business Premium</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>OneNoteRetail</Id>
+    <Name>OneNote</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>OutlookRetail</Id>
+    <Name>Outlook</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>PowerPointRetail</Id>
+    <Name>PowerPoint</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>ProjectProXVolume</Id>
+    <Name>Project Professional Volume</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>ProjectStdRetail</Id>
+    <Name>Project Standard</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>ProjectStdXVolume</Id>
+    <Name>Project Standard Volume</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>PublisherRetail</Id>
+    <Name>Publisher</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>VisioProXVolume</Id>
+    <Name>Visio Professional Volume</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>VisioStdRetail</Id>
+    <Name>Visio Standard</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>VisioStdXVolume</Id>
+    <Name>Visio Standard Volume</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>WordRetail</Id>
+    <Name>Word</Name>
+    <Group>non-Office 365</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>LyncEntryRetail</Id>
+    <Name>Skype for Business Basic 2015</Name>
+    <Group>Skype/Lync</Group>
+    <OfficeDeploymentToolVersion>2013</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>LyncRetail</Id>
+    <Name>Skype for Business 2015</Name>
+    <Group>Skype/Lync</Group>
+    <OfficeDeploymentToolVersion>2013</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>SkypeforBusinessEntryRetail</Id>
+    <Name>Skype for Business Basic 2016</Name>
+    <Group>Skype/Lync</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+  <Product>
+    <Id>SkypeforBusinessRetail</Id>
+    <Name>Skype for Business 2016</Name>
+    <Group>Skype/Lync</Group>
+    <OfficeDeploymentToolVersion>2016</OfficeDeploymentToolVersion>
+    <Plans>
+      <Plan></Plan>
+    </Plans>
+  </Product>
+</Products>

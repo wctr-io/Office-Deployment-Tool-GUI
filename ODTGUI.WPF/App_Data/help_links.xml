@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfHelpLink xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HelpLink>
+    <Text>Configuration options for the Office 2016 Deployment Tool</Text>
+    <Link>https://support.office.com/en-us/article/Configuration-options-for-the-Office-2016-Deployment-Tool-d3879f0d-766c-469c-9440-0a9a2a905ca8?ui=en-US&amp;rs=en-US&amp;ad=US</Link>
+  </HelpLink>
+  <HelpLink>
+    <Text>Overview of shared computer activation for Office 365 ProPlus</Text>
+    <Link>https://support.office.com/en-us/article/Overview-of-shared-computer-activation-for-Office-365-ProPlus-836f882c-8ff6-4f19-8b24-0212e0111c94</Link>
+  </HelpLink>
+</ArrayOfHelpLink>
