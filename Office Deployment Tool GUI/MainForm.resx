@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="mainMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="enabledUpdatesRichTextBox.Text" xml:space="preserve">
+    <value>Enabled attribute (part of Updates element)
+
+If set to TRUE, Office will check for updates. If set to FALSE, Office won't check for updates. 
+
+Optional. The default value is TRUE. 
+
+Allowed values: 
+Enabled="TRUE" 
+Enabled="FALSE"
+</value>
+  </data>
+  <data name="updatepathUpdatesRichTextBox.Text" xml:space="preserve">
+    <value>UpdatePath attribute (part of Updates element)
+
+Defines where the updates for Office come from. If UpdatePath is not set or is set to empty (""), the location is set to the Office Content Delivery Network (CDN). UpdatePath can specify a network, local, or HTTP path of a source for Office installation files. Environment variables can be used for network or local paths. 
+
+If you use Group Policy with the Office 2016 &lt;https://www.microsoft.com/download/details.aspx?id=49030&gt; Administrative Template files (ADMX/ADML), you can set UpdatePath by using the Update Path policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. 
+
+Optional. 
+
+Example values: 
+UpdatePath="\server\share" 
+UpdatePath="C:\Preload\Office" 
+UpdatePath="http://internalApps/Office/"
+</value>
+  </data>
+  <data name="targetversionUpdatesRichTextBox.Text" xml:space="preserve">
+    <value>TargetVersion attribute (part of Updates element)
+
+Defines which version Office updates to. If TargetVersion is not set or is set to empty (""), Office updates to the most recent version from the specified update path. If TargetVersion is set to a specific build number, Office attempts to update to that version. 
+
+If you use Group Policy with the Office 2016 &lt;https://www.microsoft.com/download/details.aspx?id=49030&gt; Administrative Template files (ADMX/ADML), you can set TargetVersion by using the Target Version policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. 
+
+Optional. 
+
+Example values: 
+TargetVersion="15.1.2.3" 
+TargetVersion="""
+</value>
+  </data>
+  <data name="deadlineUpdatesRichTextBox.Text" xml:space="preserve">
+    <value>Deadline attribute (part of Updates element)
+
+Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use Deadline with Target Version to make sure that Office is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
+
+Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This gives users the opportunity to save the Office documents that they are working on and to close any Office programs that are open. If users don't close the Office programs,the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
+
+After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up-to-date, you must change the deadline every time a new update for Office is available. 
+
+To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the Office 2016 &lt;https://www.microsoft.com/download/details.aspx?id=49030&gt; Administrative Template files (ADMX/ADML), you can set Deadline by using the Update Deadline policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. 
+Optional. 
+
+Example value:
+Deadline="05/16/2014 18:30"
+</value>
+  </data>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>Channel attribute (part of Updates element)
+
+Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office. 
+
+For more information about update channels, see Overview of update channels for Office 365 ProPlus &lt;https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus&gt;. 
+
+If you use Group Policy with the Office 2016 Administrative Template files (ADMX/ADML) &lt;https://go.microsoft.com/fwlink/p/?LinkID=626001&gt;, you can set Channel by using the Update Channel policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the Channel value set by using the Office Deployment Tool. 
+
+Optional. The default is Broad for Office 365 ProPlus and Monthly for Visio Pro for Office 365 and Project Online Desktop Client. 
+
+Allowed values: 
+Channel="Monthly" 
+Channel="Broad" 
+Channel="Targeted"
+</value>
+  </data>
+</root>
