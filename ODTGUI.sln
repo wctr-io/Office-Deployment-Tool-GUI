@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODTGUI", "ODTGUI\ODTGUI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODTGUI.WPF", "ODTGUI.WPF\ODTGUI.WPF.csproj", "{A2F2D1EC-B56F-4195-B417-B57DAF51F1CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Office Deployment Tool GUI", "Office Deployment Tool GUI\Office Deployment Tool GUI.csproj", "{08FFD366-8AC2-490D-B579-A8FEE0897435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A2F2D1EC-B56F-4195-B417-B57DAF51F1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2F2D1EC-B56F-4195-B417-B57DAF51F1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2F2D1EC-B56F-4195-B417-B57DAF51F1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FFD366-8AC2-490D-B579-A8FEE0897435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FFD366-8AC2-490D-B579-A8FEE0897435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FFD366-8AC2-490D-B579-A8FEE0897435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FFD366-8AC2-490D-B579-A8FEE0897435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
