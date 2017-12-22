@@ -120,6 +120,173 @@
   <metadata name="mainMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="channelUpdatesRichTextBox.Text" xml:space="preserve">
+    <value>Channel attribute (part of Updates element)
+
+Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office. 
+
+For more information about update channels, see Overview of update channels for Office 365 ProPlus &lt;https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus&gt;. 
+
+If you use Group Policy with the Office 2016 Administrative Template files (ADMX/ADML) &lt;https://go.microsoft.com/fwlink/p/?LinkID=626001&gt;, you can set Channel by using the Update Channel policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the Channel value set by using the Office Deployment Tool. 
+
+Optional. The default is Broad for Office 365 ProPlus and Monthly for Visio Pro for Office 365 and Project Online Desktop Client. 
+
+Allowed values: 
+Channel="Monthly" 
+Channel="Broad" 
+Channel="Targeted"
+</value>
+  </data>
+  <data name="readmeRichTextBox.Text" xml:space="preserve">
+    <value>Configuration options for the Office 2016 Deployment Tool
+&lt;https://docs.microsoft.com/en-us/deployoffice/configuration-options-for-the-office-2016-deployment-tool&gt;
+
+With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see Overview of the Office 2016 Deployment Tool &lt;https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool&gt;.
+
+Example of a standard configuration file
+
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.+ 
+
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes. 
+
+This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
+
+&lt;Configuration&gt;
+  &lt;Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" &gt;
+    &lt;Product ID="O365ProPlusRetail"&gt;
+      &lt;Language ID="en-us" /&gt;
+      &lt;Language ID="ja-jp" /&gt;
+    &lt;/Product&gt;
+    &lt;Product ID="VisioProRetail"&gt;
+      &lt;Language ID="en-us" /&gt;
+      &lt;Language ID="ja-jp" /&gt;
+    &lt;/Product&gt;
+  &lt;/Add&gt;
+  &lt;Updates Enabled="TRUE" 
+           UpdatePath="\\Server\Share" 
+           Channel="Broad" /&gt; 
+  &lt;Display Level="None" AcceptEULA="TRUE" /&gt;  
+  &lt;Logging Level="Standard" Path="%temp%" /&gt; 
+&lt;/Configuration&gt;
+
+Value Description 
+Add SourcePath="\Server\Share" 
+Office will be downloaded to "\server\share" on your network and deployed using installation files at that location. 
+
+Add OfficeClientEdition="32" 
+Downloads and installs the 32-bit edition of Office 
+
+Add Channel="Broad" 
+Office will be installed using the Semi-Annual Channel. 
+
+Product ID="O365ProPlusRetail" 
+Downloads and installs Office 365 ProPlus. 
+
+Language ID="en-us" 
+Language ID="ja-jp" 
+Downloads and installs English and Japanese versions of Office. 
+
+Updates Enabled="TRUE"
+Office will check for updates. 
+
+Updates UpdatePath="\Server\Share" 
+Office checks for updates at "\server\share" on your network. 
+
+Updates Channel="Broad" 
+Office updates using the Semi-Annual Channel. 
+
+Display Level="None" AcceptEULA="TRUE" 
+When installing Office, no user interface is displayed. 
+
+Logging Level="Standard" Path="%temp%" 
+Log files are stored in the %temp% folder. 
+</value>
+  </data>
+  <data name="readmePropertyRichTextBox.Text" xml:space="preserve">
+    <value>Property element
+
+Defines certain Office behaviors and properties. 
+
+Example
+&lt;Property Name="FORCEAPPSHUTDOWN"
+          Value="FALSE"/&gt;
+&lt;Property Name="SharedComputerLicensing"
+          Value="1"/&gt;
+&lt;Property Name="PinIconsToTaskbar"
+          Value="TRUE"/&gt;
+
+Name attribute (part of Property element)
+Required. Defines the specific property whose value you want to set. 
+
+Value attribute (part of Property element)
+Defines the value of the named property.</value>
+  </data>
+  <data name="autoactivatePropertyRichTextBox.Text" xml:space="preserve">
+    <value>AUTOACTIVATE property (part of Property element)
+
+Because Office 365 ProPlus is set to activate automatically, you should not set this property for Office 365 ProPlus products. For other products, you can set AUTOACTIVATE to 1 to have the product activate automatically. 
+
+Optional. Default is 0. 
+
+Allowed values: 
+Property Name="AUTOACTIVATE" Value="0" 
+Property Name="AUTOACTIVATE" Value="1"
+</value>
+  </data>
+  <data name="forceappshutdownPropertyTextBox.Text" xml:space="preserve">
+    <value>FORCEAPPSHUTDOWN property (part of Property element)
+
+When set to TRUE, forces any apps that are blocking the install of Office to shut down. Data loss may occur. 
+
+Optional. Default is FALSE. 
+
+Allowed values: 
+Property Name="FORCEAPPSHUTDOWN" Value="FALSE" 
+Property Name="FORCEAPPSHUTDOWN" Value="TRUE"
+</value>
+  </data>
+  <data name="packageguidPropertyRichTextBox.Text" xml:space="preserve">
+    <value>PACKAGEGUID property (part of Property element)
+
+By default, App-V packages created by the ODT share the same App-V Package ID. Administrators can use PACKAGEGUID to specify a different Package ID. This allows you to publish multiple App-V packages of Office to an App-V Management Server. But, this doesn't enable you to deploy more than one Office App-V package to a single computer. You can use the ODT to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported. 
+
+The Package ID must follow the format of the example and can only use these characters: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F 
+If you use any other characters, the App-V package is created with the default Package ID. 
+
+Optional. 
+
+Example values: 
+Property Name="PACKAGEGUID" Value="12345678-ABCD-1234-ABCD-1234567890AB"
+</value>
+  </data>
+  <data name="sharedcomputerlicensingPropertyRichTextBox.Text" xml:space="preserve">
+    <value>SharedComputerLicensing property (part of Property element)
+
+Set SharedComputerLicensing to 1 if you deploy Office 365 ProPlus to shared computers by using Remote Desktop Services. 
+
+For more information, see Overview of shared computer activation for Office 365 ProPlus &lt;https://docs.microsoft.com/en-us/deployoffice/overview-of-shared-computer-activation-for-office-365-proplus&gt;. 
+
+Optional. Default value is 0. 
+
+Allowed values: 
+Property Name="SharedComputerLicensing" Value="0" 
+Property Name="SharedComputerLicensing" Value="1"
+</value>
+  </data>
+  <data name="piniconstotaskbarPropertyRichTextBox.Text" xml:space="preserve">
+    <value>PinIconsToTaskBar property (part of Property element)
+
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7, 8, and 8.1. If you install Office using a system account, which is common when deploying with System Center Configuration Managers, the icons will not be pinned even if this property is set to True. 
+
+Optional. The default value is True. 
+
+Allowed values: 
+Property Name="PinIconsToTaskbar" Value="FALSE" 
+Property Name="PinIconsToTaskbar" Value="TRUE"
+</value>
+  </data>
   <data name="enabledUpdatesRichTextBox.Text" xml:space="preserve">
     <value>Enabled attribute (part of Updates element)
 
@@ -175,23 +342,6 @@ Optional.
 
 Example value:
 Deadline="05/16/2014 18:30"
-</value>
-  </data>
-  <data name="richTextBox6.Text" xml:space="preserve">
-    <value>Channel attribute (part of Updates element)
-
-Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office. 
-
-For more information about update channels, see Overview of update channels for Office 365 ProPlus &lt;https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus&gt;. 
-
-If you use Group Policy with the Office 2016 Administrative Template files (ADMX/ADML) &lt;https://go.microsoft.com/fwlink/p/?LinkID=626001&gt;, you can set Channel by using the Update Channel policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the Channel value set by using the Office Deployment Tool. 
-
-Optional. The default is Broad for Office 365 ProPlus and Monthly for Visio Pro for Office 365 and Project Online Desktop Client. 
-
-Allowed values: 
-Channel="Monthly" 
-Channel="Broad" 
-Channel="Targeted"
 </value>
   </data>
 </root>
